@@ -1,0 +1,33 @@
+{
+	"name": "openpronouns-backend",
+	"packageManager": "yarn@3.0.2",
+	"scripts": {
+		"build": "webpack",
+		"start:dev": "NODE_ENV=development webpack",
+		"run:dev": "NODE_ENV=development nodemon build/index.js",
+		"start:prod": "webpack",
+		"run:prod": "node build/index.js"
+	},
+	"devDependencies": {
+		"@sucrase/webpack-loader": "^2.0.0",
+		"@types/express": "^4.17.13",
+		"@types/node": "^17.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.7.0",
+		"@typescript-eslint/parser": "^5.7.0",
+		"eslint": "^8.4.1",
+		"nodemon": "^2.0.15",
+		"prettier": "^2.5.1",
+		"sucrase": "^3.20.3",
+		"ts-loader": "^9.2.6",
+		"ts-node": "^10.4.0",
+		"typescript": "^4.5.4",
+		"webpack": "^5.65.0",
+		"webpack-cli": "^4.9.1",
+		"webpack-node-externals": "^3.0.0",
+		"webpack-shell-plugin": "^0.5.0"
+	},
+	"dependencies": {
+		"express": "^4.17.2",
+		"lodash": "^4.17.21"
+	}
+}
