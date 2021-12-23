@@ -1,5 +1,5 @@
 # openPronouns-backend
-![Project license](https://shields.io/github/license/lucxjo/openPronouns-backend)  
+![Project license](https://shields.io/github/license/lucxjo/openPronouns-backend?style=flat-square) [![Matrix Chat](https://shields.io/matrix/oPronouns-g:matrix.org?style=flat-square&logo=matrix)](https://matrix.to/#/#oPronouns-g:matrix.org)  
 The openPronouns backend code
 
 ## What is openPronouns?
