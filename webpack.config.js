@@ -4,6 +4,7 @@ const WebpackShellPlugin = require('webpack-shell-plugin');
 const path = require('path');
 const { NODE_ENV = 'production' } = process.env;
 
+
 module.exports = {
 	externals: [nodeExternals()],
 	watch: NODE_ENV === 'development',
@@ -17,7 +18,7 @@ module.exports = {
 	},
 	entry: './src/index.ts',
 	mode: NODE_ENV,
-	target: 'node',
+	externalsPresets: { node: true },
 	output: {
 		path: path.resolve(__dirname, 'build'),
 		filename: 'index.js',
