@@ -28,7 +28,13 @@ async function startServer() {
             status: res.statusCode,
             message: 'Not Found',
         });
-	});
+    });
+    
+    await mongoose.connect('mongodb://localhost:27017/opd', {
+        useUnifiedTopology: true,
+        useNewUrlParser: true,
+    });
+    console.log('Connected to MongoDB');
 
     app.listen({ port: PORT }, () => {
         console.log(`🚀 Server ready at http://localhost:${PORT}`)

@@ -9,10 +9,6 @@ const PronounType = new mongoose.Schema({
 });
 
 const PronounSchema = new mongoose.Schema({
-	_id: {
-		type: String,
-		required: true,
-	},
 	en_pronoun: {
 		type: PronounType,
 		required: false,

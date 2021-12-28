@@ -314,17 +314,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sucrase/webpack-loader@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@sucrase/webpack-loader@npm:2.0.0"
-  dependencies:
-    loader-utils: ^1.1.0
-  peerDependencies:
-    sucrase: ^3
-  checksum: 16578991b1b888ac5bec5628bd24db9e21651bbbe30de076aece8787f115d8971ac87a20bc75446187c73c3185851ec2233d5b6f18c4a2dd53fbbb1ed4e488b4
-  languageName: node
-  linkType: hard
-
 "@swc/core-android-arm-eabi@npm:1.2.123":
   version: 1.2.123
   resolution: "@swc/core-android-arm-eabi@npm:1.2.123"
@@ -1179,13 +1168,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"any-promise@npm:^1.0.0":
-  version: 1.3.0
-  resolution: "any-promise@npm:1.3.0"
-  checksum: 0ee8a9bdbe882c90464d75d1f55cf027f5458650c4bd1f0467e65aec38ccccda07ca5844969ee77ed46d04e7dded3eaceb027e8d32f385688523fe305fa7e1de
-  languageName: node
-  linkType: hard
-
 "anymatch@npm:~3.1.2":
   version: 3.1.2
   resolution: "anymatch@npm:3.1.2"
@@ -1767,13 +1749,6 @@ __metadata:
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
   checksum: ab8c07884e42c3a8dbc5dd9592c606176c7eb5c1ca5ff274bcf907039b2c41de3626f684ea75ccf4d361ba004bbaff1f577d5384c155f3871e456bdf27becf9e
-  languageName: node
-  linkType: hard
-
-"commander@npm:^4.0.0":
-  version: 4.1.1
-  resolution: "commander@npm:4.1.1"
-  checksum: d7b9913ff92cae20cb577a4ac6fcc121bd6223319e54a40f51a14740a681ad5c574fd29a57da478a5f234a6fa6c52cbf0b7c641353e03c648b1ae85ba670b977
   languageName: node
   linkType: hard
 
@@ -2701,20 +2676,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"glob@npm:7.1.6":
-  version: 7.1.6
-  resolution: "glob@npm:7.1.6"
-  dependencies:
-    fs.realpath: ^1.0.0
-    inflight: ^1.0.4
-    inherits: 2
-    minimatch: ^3.0.4
-    once: ^1.3.0
-    path-is-absolute: ^1.0.0
-  checksum: 351d549dd90553b87c2d3f90ce11aed9e1093c74130440e7ae0592e11bbcd2ce7f0ebb8ba6bfe63aaf9b62166a7f4c80cb84490ae5d78408bb2572bf7d4ee0a6
-  languageName: node
-  linkType: hard
-
 "glob@npm:^7.1.3, glob@npm:^7.1.4":
   version: 7.2.0
   resolution: "glob@npm:7.2.0"
@@ -3245,17 +3206,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"json5@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "json5@npm:1.0.1"
-  dependencies:
-    minimist: ^1.2.0
-  bin:
-    json5: lib/cli.js
-  checksum: e76ea23dbb8fc1348c143da628134a98adf4c5a4e8ea2adaa74a80c455fc2cdf0e2e13e6398ef819bfe92306b610ebb2002668ed9fc1af386d593691ef346fc3
-  languageName: node
-  linkType: hard
-
 "json5@npm:^2.1.1, json5@npm:^2.1.2":
   version: 2.2.0
   resolution: "json5@npm:2.2.0"
@@ -3355,28 +3305,10 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"lines-and-columns@npm:^1.1.6":
-  version: 1.2.4
-  resolution: "lines-and-columns@npm:1.2.4"
-  checksum: 0c37f9f7fa212b38912b7145e1cd16a5f3cd34d782441c3e6ca653485d326f58b3caccda66efce1c5812bde4961bbde3374fae4b0d11bf1226152337f3894aa5
-  languageName: node
-  linkType: hard
-
 "loader-runner@npm:^4.2.0":
   version: 4.2.0
   resolution: "loader-runner@npm:4.2.0"
   checksum: e61aea8b6904b8af53d9de6f0484da86c462c0001f4511bedc837cec63deb9475cea813db62f702cd7930420ccb0e75c78112270ca5c8b61b374294f53c0cb3a
-  languageName: node
-  linkType: hard
-
-"loader-utils@npm:^1.1.0":
-  version: 1.4.0
-  resolution: "loader-utils@npm:1.4.0"
-  dependencies:
-    big.js: ^5.2.2
-    emojis-list: ^3.0.0
-    json5: ^1.0.1
-  checksum: d150b15e7a42ac47d935c8b484b79e44ff6ab4c75df7cc4cb9093350cf014ec0b17bdb60c5d6f91a37b8b218bd63b973e263c65944f58ca2573e402b9a27e717
   languageName: node
   linkType: hard
 
@@ -3821,17 +3753,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"mz@npm:^2.7.0":
-  version: 2.7.0
-  resolution: "mz@npm:2.7.0"
-  dependencies:
-    any-promise: ^1.0.0
-    object-assign: ^4.0.1
-    thenify-all: ^1.0.0
-  checksum: 8427de0ece99a07e9faed3c0c6778820d7543e3776f9a84d22cf0ec0a8eb65f6e9aee9c9d353ff9a105ff62d33a9463c6ca638974cc652ee8140cd1e35951c87
-  languageName: node
-  linkType: hard
-
 "nanoid@npm:*, nanoid@npm:^3.1.30":
   version: 3.1.30
   resolution: "nanoid@npm:3.1.30"
@@ -3996,7 +3917,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"object-assign@npm:^4, object-assign@npm:^4.0.1, object-assign@npm:^4.1.1":
+"object-assign@npm:^4, object-assign@npm:^4.1.1":
   version: 4.1.1
   resolution: "object-assign@npm:4.1.1"
   checksum: fcc6e4ea8c7fe48abfbb552578b1c53e0d194086e2e6bbbf59e0a536381a292f39943c6e9628af05b5528aa5e3318bb30d6b2e53cadaf5b8fe9e12c4b69af23f
@@ -4041,7 +3962,6 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "openpronouns-backend@workspace:."
   dependencies:
-    "@sucrase/webpack-loader": ^2.0.0
     "@swc/core": ^1.2.123
     "@types/bcrypt": ^5.0.0
     "@types/body-parser": ^1.19.2
@@ -4070,14 +3990,11 @@ fsevents@~2.3.2:
     nodemon: ^2.0.15
     pino: ^7.5.1
     pino-pretty: ^7.3.0
-    pnp-webpack-plugin: ^1.7.0
     prettier: ^2.5.1
     regenerator-runtime: ^0.13.9
-    sucrase: ^3.20.3
     swc-loader: ^0.1.15
     ts-loader: ^9.2.6
     ts-node-dev: ^1.1.8
-    ts-pnp: ^1.2.0
     typescript: ^4.5.4
     webpack: ^5.65.0
     webpack-cli: ^4.9.1
@@ -4285,28 +4202,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"pirates@npm:^4.0.1":
-  version: 4.0.4
-  resolution: "pirates@npm:4.0.4"
-  checksum: 6b7187d526fd025a2b91e8fd289c78d88c4adc3ea947b9facbe9cb300a896b0ec00f3e77b36a043001695312a8debbf714453495283bd8a4eaad3bc0c38df425
-  languageName: node
-  linkType: hard
-
 "pkg-dir@npm:^4.2.0":
   version: 4.2.0
   resolution: "pkg-dir@npm:4.2.0"
   dependencies:
     find-up: ^4.0.0
   checksum: 9863e3f35132bf99ae1636d31ff1e1e3501251d480336edb1c211133c8d58906bed80f154a1d723652df1fda91e01c7442c2eeaf9dc83157c7ae89087e43c8d6
-  languageName: node
-  linkType: hard
-
-"pnp-webpack-plugin@npm:^1.7.0":
-  version: 1.7.0
-  resolution: "pnp-webpack-plugin@npm:1.7.0"
-  dependencies:
-    ts-pnp: ^1.1.6
-  checksum: a41716d13607be5a3e06ba58b17e9e619cf07da3a0a7b10bd41cd89362873041054fd2b7966ad30a1b26b826cfb8fecc0469a95902d5b1b8ba8f591e2fe6b96d
   languageName: node
   linkType: hard
 
@@ -5020,23 +4921,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"sucrase@npm:^3.20.3":
-  version: 3.20.3
-  resolution: "sucrase@npm:3.20.3"
-  dependencies:
-    commander: ^4.0.0
-    glob: 7.1.6
-    lines-and-columns: ^1.1.6
-    mz: ^2.7.0
-    pirates: ^4.0.1
-    ts-interface-checker: ^0.1.9
-  bin:
-    sucrase: bin/sucrase
-    sucrase-node: bin/sucrase-node
-  checksum: ff383a0a4de0324d2466676e3049d5051f7ab517b44a5de8430aabedcf61e195b3e31f29547b47e9c6403cece9487ed8952c4b39932e9e0aeed42462fc30ad48
-  languageName: node
-  linkType: hard
-
 "supports-color@npm:^5.3.0, supports-color@npm:^5.5.0":
   version: 5.5.0
   resolution: "supports-color@npm:5.5.0"
@@ -5144,24 +5028,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"thenify-all@npm:^1.0.0":
-  version: 1.6.0
-  resolution: "thenify-all@npm:1.6.0"
-  dependencies:
-    thenify: ">= 3.1.0 < 4"
-  checksum: dba7cc8a23a154cdcb6acb7f51d61511c37a6b077ec5ab5da6e8b874272015937788402fd271fdfc5f187f8cb0948e38d0a42dcc89d554d731652ab458f5343e
-  languageName: node
-  linkType: hard
-
-"thenify@npm:>= 3.1.0 < 4":
-  version: 3.3.1
-  resolution: "thenify@npm:3.3.1"
-  dependencies:
-    any-promise: ^1.0.0
-  checksum: 84e1b804bfec49f3531215f17b4a6e50fd4397b5f7c1bccc427b9c656e1ecfb13ea79d899930184f78bc2f57285c54d9a50a590c8868f4f0cef5c1d9f898b05e
-  languageName: node
-  linkType: hard
-
 "thread-stream@npm:^0.13.0":
   version: 0.13.0
   resolution: "thread-stream@npm:0.13.0"
@@ -5230,13 +5096,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"ts-interface-checker@npm:^0.1.9":
-  version: 0.1.13
-  resolution: "ts-interface-checker@npm:0.1.13"
-  checksum: 20c29189c2dd6067a8775e07823ddf8d59a33e2ffc47a1bd59a5cb28bb0121a2969a816d5e77eda2ed85b18171aa5d1c4005a6b88ae8499ec7cc49f78571cb5e
-  languageName: node
-  linkType: hard
-
 "ts-loader@npm:^9.2.6":
   version: 9.2.6
   resolution: "ts-loader@npm:9.2.6"
@@ -5297,16 +5156,6 @@ fsevents@~2.3.2:
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
   checksum: 356e2647b8b1e6ab00380c0537fa569b63bd9b6f006cc40fd650f81fae1817bd8fecc075300036950d8f45c1d85b95be33cd1e48a1a424a7d86c3dbb42bf60e5
-  languageName: node
-  linkType: hard
-
-"ts-pnp@npm:^1.1.6, ts-pnp@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "ts-pnp@npm:1.2.0"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: c2a698b85d521298fe6f2435fbf2d3dc5834b423ea25abd321805ead3f399dbeedce7ca09492d7eb005b9d2c009c6b9587055bc3ab273dc6b9e40eefd7edb5b2
   languageName: node
   linkType: hard
 

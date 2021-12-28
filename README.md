@@ -16,4 +16,4 @@ This means that I will also create a standard specification to cover the base re
 Federation reduces the amount of trust required in a single person/company hosting the backend and frontend since the end user would have the option to run their own instance and own their data.
 
 ## Support us
-Normally, I'd be plugging donation links here but the project is nowhere near the stage for that yet. If you'd like to support the project, feel free to contribute to the codebase. Got a suggestion? Let me know on [[matrix]](https://matrix.to/#/#oPronouns-g:matrix.org). Security issue? Message me directly on [[matrix]](https://matrix.to/#/@Ludoviko_:matrix.org) or [email](mailto:me@ludoviko.ch) me
+Normally, I'd be plugging donation links here but the project is nowhere near the stage for that yet. If you'd like to support the project, feel free to contribute to the codebase. Got a suggestion? Let me know on [[matrix]](https://matrix.to/#/#oPronouns-g:matrix.org). Security issue? Message me directly on [[matrix]](https://matrix.to/#/@Ludoviko_:matrix.org) or [email](mailto:me@ludoviko.ch) me.
