@@ -2,11 +2,11 @@
 
 import mongoose from 'mongoose';
 
-const PronounType = {
+const PronounType = new mongoose.Schema({
 	pronoun: String,
 	isNeo: Boolean,
 	about: String,
-};
+});
 
 const PronounSchema = new mongoose.Schema({
 	_id: {
