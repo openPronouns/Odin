@@ -1,4 +1,2 @@
-/** @format */
-
-export * from './resolvers';
-export * from './typeDefs';
+export * from './gql';
+//export * from './types';

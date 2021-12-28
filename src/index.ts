@@ -1,6 +1,7 @@
 import * as express from 'express';
-import { ApolloServer, gql } from 'apollo-server-express';
-import {resolvers, typeDefs} from '../lib'
+import { ApolloServer } from 'apollo-server-express';
+import { resolvers, typeDefs } from '../lib/gql'
+import mongoose from 'mongoose';
 
 const { PORT = 3000 } = process.env;
 
