@@ -5,6 +5,7 @@ import { ApolloServer } from 'apollo-server-express';
 import { resolvers, typeDefs } from '../lib/gql';
 import mongoose from 'mongoose';
 import { PORT, KEY, NODE_ENV } from './vars';
+import helmet from 'helmet';
 
 async function startServer() {
 	const app = express.default();
@@ -22,6 +23,8 @@ async function startServer() {
 			`<h1>Welcome to the openPronoun API!</h1> <p>Currently, there is no REST API. Please use GraphQL at <a href="./gql">/gql.</a></p>`
 		);
 	});
+
+	app.use(helmet());
 
 	app.use((req, res) => {
 		res.status(404).send({
@@ -41,6 +44,7 @@ async function startServer() {
 		console.log(
 			`🚀 GQL ready at http://localhost:${PORT}${apolloServer.graphqlPath}`
 		);
+		console.info(`NODE_ENV: ${NODE_ENV}, KEY: ${KEY}`);
 	});
 }
 

@@ -1,7 +1,8 @@
 /** @format */
 
-import { Pronoun } from '../../models';
+import { Pronoun, User } from '../../models';
 import { KEY as masterKey } from '../../src/vars';
+import bcrypt from 'bcrypt';
 
 export const resolvers = {
 	Query: {
@@ -11,6 +12,9 @@ export const resolvers = {
 		},
 		getPronoun: async (_root, { id }) => {
 			return await Pronoun.findById(id);
+		},
+		getUsers: async () => {
+			return await User.find();
 		},
 	},
 	Mutation: {
@@ -54,10 +58,7 @@ export const resolvers = {
 			}
 		},
 
-		updatePronoun: async (
-			_parent,
-			{ id, pronoun, KEY },
-		) => {
+		updatePronoun: async (_parent, { id, pronoun, KEY }) => {
 			if (KEY !== masterKey) {
 				throw new Error('Invalid KEY');
 			} else {
@@ -73,7 +74,8 @@ export const resolvers = {
 					similarTo,
 				} = pronoun;
 
-				const updates: any = {}
+				// eslint-disable-next-line @typescript-eslint/no-explicit-any
+				const updates: any = {};
 				if (canonicalName !== undefined) {
 					updates.canonicalName = canonicalName;
 				}
@@ -111,5 +113,44 @@ export const resolvers = {
 				return updatedPronoun;
 			}
 		},
+		createUser: async (_parent, args) => {
+			if (args.KEY !== masterKey) {
+				throw new Error('Invalid KEY');
+			} else {
+				const { username, displayName, email, pronouns } = args.user;
+
+				let { isAdmin, isModerator } = args.user;
+				if (isAdmin === undefined) {
+					isAdmin = false;
+				}
+				if (isModerator === undefined) {
+					isModerator = false;
+				}
+				if (username === undefined || '') {
+					throw new Error('Username is required');
+				} else if (displayName === undefined || '') {
+					throw new Error('Display name is required');
+				} else {
+					const user = new User({
+						username,
+						displayName,
+						email,
+						pronouns,
+						isAdmin,
+						isModerator,
+					});
+					await user.save();
+					return user;
+				}
+			}
+		},
+		deleteUser: async (_parent, { KEY, id }) => {
+			if (KEY !== masterKey) {
+				throw new Error('Invalid KEY');
+			} else {
+				await User.findByIdAndRemove(id);
+				return `User deleted (id: ${id})`;
+			}
+		}
 	},
 };

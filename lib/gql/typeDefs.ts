@@ -30,11 +30,22 @@ export const typeDefs = gql`
 		examples: [String]
 		similarTo: [ID]
 	}
+	type User {
+		id: ID
+		username: String!
+		displayName: String
+		email: String
+		password: String
+		pronouns: [ID]
+		isAdmin: Boolean
+		isModerator: Boolean
+	}
 	type Query {
 		hello: String
 
 		getPronouns: [Pronoun]
 		getPronoun(id: ID): Pronoun
+		getUsers: [User]
 	}
 	input MorphemesInput {
 		subject: String
@@ -60,11 +71,25 @@ export const typeDefs = gql`
 		plural: Boolean
 		morphemes: MorphemesInput
 		examples: [String]
-		similarTo: [String]
+		similarTo: [ID]
+	}
+	input UserInput {
+		username: String!
+		displayName: String
+		email: String
+		pronouns: [ID]
+		isAdmin: Boolean
+		isModerator: Boolean
 	}
 	type Mutation {
+		# Pronouns
 		createPronoun(pronoun: PronounInput, KEY: String): Pronoun
 		deletePronoun(id: ID, KEY: String): String
 		updatePronoun(id: ID, pronoun: PronounInput, KEY: String): Pronoun
+
+		# Users
+		createUser(user: UserInput, KEY: String): User
+		deleteUser(id: ID, KEY: String): String
+		updateUser(id: ID, user: UserInput, KEY: String): User
 	}
 `;
