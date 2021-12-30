@@ -1,7 +1,6 @@
 /** @format */
 
 import { Pronoun } from '../../models';
-import { pronouns } from '../types';
 import { KEY as masterKey } from '../../src/vars';
 
 export const resolvers = {
