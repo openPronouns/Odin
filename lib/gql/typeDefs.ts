@@ -9,6 +9,14 @@ export const typeDefs = gql`
 		possessiveDeterminer: String
 		possessive: String
 		reflexive: String
+		definiteArticle: String
+		indefiniteArticle: String
+		pluralSubject: String
+		pluralObject: String
+		pluralDefiniteArticle: String
+		pluralIndefiniteArticle: String
+		inflection: String
+		inflectionC: String
 	}
 	type Pronoun {
 		id: ID
@@ -34,6 +42,14 @@ export const typeDefs = gql`
 		possessiveDeterminer: String
 		possessive: String
 		reflexive: String
+		definiteArticle: String
+		indefiniteArticle: String
+		pluralSubject: String
+		pluralObject: String
+		pluralDefiniteArticle: String
+		pluralIndefiniteArticle: String
+		inflection: String
+		inflectionC: String
 	}
 	input PronounInput {
 		canonicalName: String

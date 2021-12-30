@@ -2,10 +2,20 @@
 
 import mongoose from 'mongoose';
 
-const PronounType = new mongoose.Schema({
-	pronoun: String,
-	isNeo: Boolean,
-	about: String,
+const MorphemesSchema = new mongoose.Schema({
+	subject: String,
+	object: String,
+	possessiveDeterminer: String,
+	possessive: String,
+	reflexive: String,
+	definiteArticle: String,
+	indefiniteArticle: String,
+	pluralSubject: String,
+	pluralObject: String,
+	pluralDefiniteArticle: String,
+	pluralIndefiniteArticle: String,
+	inflection: String,
+	inflectionC: String,
 });
 
 const PronounSchema = new mongoose.Schema({
@@ -15,13 +25,7 @@ const PronounSchema = new mongoose.Schema({
 	language: String,
 	normative: Boolean,
 	plural: Boolean,
-	morphemes: {
-		subject: String,
-		object: String,
-		possessiveDeterminer: String,
-		possessive: String,
-		reflexive: String,
-	},
+	morphemes: MorphemesSchema,
 	examples: [String],
 	similarTo: [String],
 });
