@@ -3,19 +3,24 @@
 import { gql } from 'apollo-server-express';
 
 export const typeDefs = gql`
-	type PronounType {
-		pronoun: String,
-		isNeo: Boolean,
-		about: String
+	type Morphemes {
+		subject: String
+		object: String
+		possessiveDeterminer: String
+		possessive: String
+		reflexive: String
 	}
-  	type Pronoun {
+	type Pronoun {
 		id: ID
-		en_pronoun: PronounType
-		es_pronoun: PronounType
-		fr_pronoun: PronounType
-		it_pronoun: PronounType
-		pt_pronoun: PronounType
-		eo_pronoun: PronounType
+		canonicalName: String
+		name: String
+		description: String
+		language: String
+		normative: Boolean
+		plural: Boolean
+		morphemes: Morphemes
+		examples: [String]
+		similarTo: [ID]
 	}
 	type Query {
 		hello: String
@@ -23,25 +28,27 @@ export const typeDefs = gql`
 		getPronouns: [Pronoun]
 		getPronoun(id: ID): Pronoun
 	}
-	input PronounTypeInput {
-		pronoun: String,
-		isNeo: Boolean,
-		about: String
+	input MorphemesInput {
+		subject: String
+		object: String
+		possessiveDeterminer: String
+		possessive: String
+		reflexive: String
 	}
 	input PronounInput {
-		en_pronoun: PronounTypeInput,
-		es_pronoun: PronounTypeInput,
-		fr_pronoun: PronounTypeInput,
-		it_pronoun: PronounTypeInput,
-		pt_pronoun: PronounTypeInput,
-		eo_pronoun: PronounTypeInput
+		canonicalName: String
+		name: String
+		description: String
+		language: String
+		normative: Boolean
+		plural: Boolean
+		morphemes: MorphemesInput
+		examples: [String]
+		similarTo: [String]
 	}
 	type Mutation {
-		createPronoun(
-			pronoun: PronounInput
-			KEY: String
-		): Pronoun,
-		deletePronoun(id: ID, KEY: String): String,
+		createPronoun(pronoun: PronounInput, KEY: String): Pronoun
+		deletePronoun(id: ID, KEY: String): String
 		updatePronoun(id: ID, pronoun: PronounInput, KEY: String): Pronoun
 	}
 `;

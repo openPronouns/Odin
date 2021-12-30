@@ -9,30 +9,21 @@ const PronounType = new mongoose.Schema({
 });
 
 const PronounSchema = new mongoose.Schema({
-	en_pronoun: {
-		type: PronounType,
-		required: false,
+	canonicalName: String,
+	name: String,
+	description: String,
+	language: String,
+	normative: Boolean,
+	plural: Boolean,
+	morphemes: {
+		subject: String,
+		object: String,
+		possessiveDeterminer: String,
+		possessive: String,
+		reflexive: String,
 	},
-	es_pronoun: {
-		type: PronounType,
-		required: false,
-	},
-	fr_pronoun: {
-		type: PronounType,
-		required: false,
-	},
-	it_pronoun: {
-		type: PronounType,
-		required: false,
-	},
-	pt_pronoun: {
-		type: PronounType,
-		required: false,
-	},
-	eo_pronoun: {
-		type: PronounType,
-		required: false,
-	},
+	examples: [String],
+	similarTo: [String],
 });
 
 export const Pronoun = mongoose.model('pronoun', PronounSchema);

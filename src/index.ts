@@ -19,7 +19,7 @@ async function startServer() {
 
 	app.use('/', (req, res) => {
 		res.status(200).send(
-			`Welcome to the open Pronoun API! Currently, there is no REST API. Please use GraphQL at <a href="./gql">/gql.</a>`
+			`<h1>Welcome to the openPronoun API!</h1> <p>Currently, there is no REST API. Please use GraphQL at <a href="./gql">/gql.</a></p>`
 		);
 	});
 

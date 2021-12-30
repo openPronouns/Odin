@@ -1,7 +1,8 @@
 /** @format */
 
 import { Pronoun } from '../../models';
-import {KEY as masterKey} from '../../src/vars';
+import { pronouns } from '../types';
+import { KEY as masterKey } from '../../src/vars';
 
 export const resolvers = {
 	Query: {
@@ -14,32 +15,38 @@ export const resolvers = {
 		},
 	},
 	Mutation: {
-		createPronoun: async (_parent, args, _context, _info) => {
+		createPronoun: async (_parent, args) => {
 			if (args.KEY !== masterKey) {
 				throw new Error('Invalid KEY');
 			} else {
 				const {
-					en_pronoun,
-					es_pronoun,
-					fr_pronoun,
-					it_pronoun,
-					pt_pronoun,
-					eo_pronoun,
+					canonicalName,
+					name,
+					description,
+					language,
+					normative,
+					plural,
+					morphemes,
+					examples,
+					similarTo,
 				} = args.pronoun;
 				const pronoun = new Pronoun({
-					en_pronoun,
-					es_pronoun,
-					fr_pronoun,
-					it_pronoun,
-					pt_pronoun,
-					eo_pronoun,
+					canonicalName,
+					name,
+					description,
+					language,
+					normative,
+					plural,
+					morphemes,
+					examples,
+					similarTo,
 				});
 				await pronoun.save();
 				return pronoun;
 			}
 		},
 
-		deletePronoun: async (_parent, {KEY, id}, _context, _info) => {
+		deletePronoun: async (_parent, { KEY, id }) => {
 			if (KEY !== masterKey) {
 				throw new Error('Invalid KEY');
 			} else {
@@ -48,29 +55,57 @@ export const resolvers = {
 			}
 		},
 
-		updatePronoun: async (_parent, { id, pronoun, KEY }, _context, _info) => {
+		updatePronoun: async (
+			_parent,
+			{ id, pronoun, KEY },
+		) => {
 			if (KEY !== masterKey) {
 				throw new Error('Invalid KEY');
 			} else {
 				const {
-					en_pronoun,
-					es_pronoun,
-					fr_pronoun,
-					it_pronoun,
-					pt_pronoun,
-					eo_pronoun,
+					canonicalName,
+					name,
+					description,
+					language,
+					normative,
+					plural,
+					morphemes,
+					examples,
+					similarTo,
 				} = pronoun;
+
+				const updates: any = {}
+				if (canonicalName !== undefined) {
+					updates.canonicalName = canonicalName;
+				}
+				if (name !== undefined) {
+					updates.name = name;
+				}
+				if (description !== undefined) {
+					updates.description = description;
+				}
+				if (language !== undefined) {
+					updates.language = language;
+				}
+				if (normative !== undefined) {
+					updates.normative = normative;
+				}
+				if (plural !== undefined) {
+					updates.plural = plural;
+				}
+				if (morphemes !== undefined) {
+					updates.morphemes = morphemes;
+				}
+				if (examples !== undefined) {
+					updates.examples = examples;
+				}
+				if (similarTo !== undefined) {
+					updates.similarTo = similarTo;
+				}
 
 				const updatedPronoun = await Pronoun.findByIdAndUpdate(
 					id,
-					{
-						en_pronoun,
-						es_pronoun,
-						fr_pronoun,
-						it_pronoun,
-						pt_pronoun,
-						eo_pronoun,
-					},
+					updates,
 					{ new: true }
 				);
 

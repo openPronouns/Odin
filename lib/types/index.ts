@@ -1,1 +1,2 @@
-//export * from './Pronoun.type';
+export * from './morphemes';
+export * from './pronouns';
