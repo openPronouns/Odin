@@ -39,8 +39,9 @@ export const typeDefs = gql`
 	type Mutation {
 		createPronoun(
 			pronoun: PronounInput
+			KEY: String
 		): Pronoun,
-		deletePronoun(id: ID): String,
-		updatePronoun(id: ID, pronoun: PronounInput): Pronoun
+		deletePronoun(id: ID, KEY: String): String,
+		updatePronoun(id: ID, pronoun: PronounInput, KEY: String): Pronoun
 	}
 `;
