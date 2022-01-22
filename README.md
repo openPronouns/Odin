@@ -1,7 +1,6 @@
 # openPronouns-backend
 [![CodeQL](https://github.com/Lucxjo/openPronouns-backend/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Lucxjo/openPronouns-backend/actions/workflows/codeql-analysis.yml)
-![Project license](https://shields.io/github/license/lucxjo/openPronouns-backend)
-[![Matrix Chat](https://shields.io/matrix/oPronouns-g:matrix.org?logo=matrix)](https://matrix.to/#/#oPronouns-g:matrix.org)  
+![Project license](https://shields.io/github/license/lucxjo/openPronouns-backend) [![Join the chat at https://gitter.im/openPronouns/Server](https://badges.gitter.im/openPronouns/Server.svg)](https://gitter.im/openPronouns/Server?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
 The openPronouns backend code
 
 ## What is openPronouns?
