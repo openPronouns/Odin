@@ -1,7 +1,7 @@
-# openPronouns-backend
-[![CodeQL](https://github.com/Lucxjo/openPronouns-backend/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Lucxjo/openPronouns-backend/actions/workflows/codeql-analysis.yml)
-![Project license](https://shields.io/github/license/lucxjo/openPronouns-backend) [![Join the chat at https://gitter.im/openPronouns/Server](https://badges.gitter.im/openPronouns/Server.svg)](https://gitter.im/openPronouns/Server?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
-The openPronouns backend code
+# openPronouns/Odin
+[![CodeQL](https://github.com/openPronouns/Odin/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Lucxjo/openPronouns-backend/actions/workflows/codeql-analysis.yml)
+![Project license](https://shields.io/github/license/openPronouns/Odin) [![Join the chat at https://gitter.im/openPronouns/Server](https://badges.gitter.im/openPronouns/Server.svg)](https://gitter.im/openPronouns/Server?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
+The openPronouns backend code in JS/TS.
 
 ## What is openPronouns?
 openPronouns is a service based around you and your pronouns. I have only just gotten started with the project so there isn't much to really show for my work.
