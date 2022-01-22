@@ -33,10 +33,7 @@ async function startServer() {
 		});
 	});
 
-	await mongoose.connect('mongodb://localhost:27017/opd', {
-		useUnifiedTopology: true,
-		useNewUrlParser: true,
-	});
+	await mongoose.connect('mongodb://localhost:27017/opd');
 	console.log('Connected to MongoDB');
 
 	app.listen({ port: PORT }, () => {
