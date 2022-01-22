@@ -1,5 +1,7 @@
 # openPronouns-backend
-![Project license](https://shields.io/github/license/lucxjo/openPronouns-backend) [![Join the chat at https://gitter.im/openPronouns/Server](https://badges.gitter.im/openPronouns/Server.svg)](https://gitter.im/openPronouns/Server?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
+[![CodeQL](https://github.com/Lucxjo/openPronouns-backend/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Lucxjo/openPronouns-backend/actions/workflows/codeql-analysis.yml)
+![Project license](https://shields.io/github/license/lucxjo/openPronouns-backend)
+[![Matrix Chat](https://shields.io/matrix/oPronouns-g:matrix.org?logo=matrix)](https://matrix.to/#/#oPronouns-g:matrix.org)  
 The openPronouns backend code
 
 ## What is openPronouns?
@@ -16,4 +18,4 @@ This means that I will also create a standard specification to cover the base re
 Federation reduces the amount of trust required in a single person/company hosting the backend and frontend since the end user would have the option to run their own instance and own their data.
 
 ## Support us
-Normally, I'd be plugging donation links here but the project is nowhere near the stage for that yet. If you'd like to support the project, feel free to contribute to the codebase. Got a suggestion? Let me know on [Gitter](https://gitter.im/openPronouns/community) or [Matrix](https://matrix.to/#/#openPronouns_community:gitter.im) (both are bridged to the other). Security issue? Message me directly on [Matrix](https://matrix.to/#/@Ludoviko_:matrix.org) or [email](mailto:me@ludoviko.ch) me.
+Normally, I'd be plugging donation links here but the project is nowhere near the stage for that yet. If you'd like to support the project, feel free to contribute to the codebase. Got a suggestion? Let me know on [[matrix]](https://matrix.to/#/#oPronouns-g:matrix.org). Security issue? Message me directly on [[matrix]](https://matrix.to/#/@Ludoviko_:matrix.org) or [email](mailto:me@ludoviko.ch) me.
