@@ -1,6 +1,7 @@
 # openPronouns/Odin
 [![CodeQL](https://github.com/openPronouns/Odin/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Lucxjo/openPronouns-backend/actions/workflows/codeql-analysis.yml)
-![Project license](https://shields.io/github/license/openPronouns/Odin) [![Join the chat at https://gitter.im/openPronouns/Server](https://badges.gitter.im/openPronouns/Server.svg)](https://gitter.im/openPronouns/Odin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  
+![Project license](https://shields.io/github/license/openPronouns/Odin) [![Join the chat at https://gitter.im/openPronouns/Server](https://badges.gitter.im/openPronouns/Server.svg)](https://gitter.im/openPronouns/Odin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FopenPronouns%2FOdin.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FopenPronouns%2FOdin?ref=badge_shield)
+ 
 The openPronouns backend code in JS/TS.
 
 ## What is openPronouns?
@@ -18,3 +19,6 @@ Federation reduces the amount of trust required in a single person/company hosti
 
 ## Support us
 Normally, I'd be plugging donation links here but the project is nowhere near the stage for that yet. If you'd like to support the project, feel free to contribute to the codebase. Got a suggestion? Let me know on [Gitter](https://gitter.im/openPronouns/Odin) or [Matrix](https://matrix.to/#/#openPronouns_Odin:gitter.im) (Same room, different clients). Security issue? Message me directly on [[matrix]](https://matrix.to/#/@Ludoviko_:matrix.org) or [email](mailto:me@ludoviko.ch) me.
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FopenPronouns%2FOdin.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FopenPronouns%2FOdin?ref=badge_large)
